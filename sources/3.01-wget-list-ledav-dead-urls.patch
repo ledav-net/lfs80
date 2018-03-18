@@ -1,0 +1,11 @@
+--- a/3.01-wget-list	2017-02-26 12:01:18.000000000 +0100
++++ b/3.01-wget-list	2018-03-07 00:16:24.043323340 +0100
+@@ -46,7 +46,7 @@
+ http://ftp.gnu.org/gnu/make/make-4.2.1.tar.bz2
+ http://download.savannah.gnu.org/releases/man-db/man-db-2.7.6.1.tar.xz
+ https://www.kernel.org/pub/linux/docs/man-pages/man-pages-4.09.tar.xz
+-http://www.multiprecision.org/mpc/download/mpc-1.0.3.tar.gz
++ftp://ftp.netbsd.org/pub/pkgsrc/distfiles/mpc-1.0.3.tar.gz
+ http://www.mpfr.org/mpfr-3.1.5/mpfr-3.1.5.tar.xz
+ http://ftp.gnu.org/gnu//ncurses/ncurses-6.0.tar.gz
+ http://ftp.gnu.org/gnu/patch/patch-2.7.5.tar.xz

@@ -1,0 +1,24 @@
+--- a/grub.cfg	2018-03-05 03:38:49.986505327 +0100
++++ b/grub.cfg	2018-03-06 01:50:34.511620298 +0100
+@@ -1,11 +1,18 @@
+ 
+-set default=0
++set default=1
+ set timeout=10
+ 
++insmod all_videos
+ insmod ext2
+ insmod ext4
+ 
+-menuentry "GNU/Linux, Linux 4.9.9-lfs-8.0-systemd" {
++menuentry "Linux 4.9.9-lfs-8.0-systemd (Generic, Full built-in modules, 80x25)" {
+ 	set root=(hd0,1)
+-        linux /vmlinuz-4.9.9-lfs-8.0-systemd root=/dev/sda3 ro
++        linux /vmlinuz-4.9.9-lfs-8.0-systemd root=/dev/sda3 raid=noautodetect ro
+ }
++
++menuentry "Linux 4.9.9-lfs-custom-vbox-1 (Cutomized for VBox 5.2.x, 1280x800)" {
++	set root=(hd0,1)
++	linux /vmlinuz-4.9.9-lfs-custom-vbox-1 root=/dev/sda3 raid=noautodetect ro
++}
++
