@@ -12,6 +12,6 @@ sudo ln -sfv $LFS/tools /
 # Packages needed for building LFS on the host system
 sudo dnf install binutils bzip2 coreutils diffutils findutils \
 	gawk gcc glibc grep gzip m4 make patch perl sed tar \
-	texinfo xz
+	texinfo xz pixz pv
 
 touch $stamp
