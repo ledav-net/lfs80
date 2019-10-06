@@ -23,3 +23,13 @@ sources/3.01-wget-list-ledav-dead-urls.patch
 
 to fix the urls... If it's the case for you, and fix some,
 thanks to submit your changes ;-)
+
+NOTE: These scripts needs root access at a certain point... The way LFS is
+built need this and this series of scripts follows the book. Only few things
+were change because of small bugs due to newer compilers, aso...
+
+Use this at your own risk and follow the LFS guide. If you don't want to
+type everything, just start the scripts one by one... Don't forget that the
+goal is to learn ! ;-)
+
+http://www.fr.linuxfromscratch.org/view/lfs-8.0-systemd-fr/
