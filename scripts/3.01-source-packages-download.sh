@@ -9,7 +9,7 @@ stamp="$LFS_BLD/.stamp_downloaded"
 	wget http://www.fr.linuxfromscratch.org/view/lfs-8.0-systemd-fr/wget-list -O $LFS_SRC/3.01-wget-list
 	cd $LFS_SRC
 	show "Patching 3.01-wget-list to fix dead urls ..."
-	patch -b -p1 < $LFS_SRC/3.01-wget-list-ledav-dead-urls.patch
+	patch -b < $LFS_SRC/3.01-wget-list-ledav-dead-urls.patch
 }
 [ -s $LFS_SRC/3.01-md5sums ]   || wget http://www.fr.linuxfromscratch.org/view/lfs-8.0-systemd-fr/md5sums   -O $LFS_SRC/3.01-md5sums
 
